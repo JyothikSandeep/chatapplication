@@ -1,4 +1,6 @@
 import React from "react";
+import Login from "../components/Authentication/Login";
+import SignUp from "../components/Authentication/SignUp";
 import {
   Container,
   Box,
@@ -41,10 +43,12 @@ const Homepage = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              <Login></Login>
             </TabPanel>
+
             <TabPanel>
-              <p>two!</p>
+              <SignUp></SignUp>
+              {/* <p>two!</p> */}
             </TabPanel>
           </TabPanels>
         </Tabs>
